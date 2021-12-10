@@ -20,8 +20,18 @@ class MainController {
     @Autowired
     lateinit var mainService: MainService
 
-    @PostMapping
-    fun get(@RequestBody stringInput: StringInput): ResponseEntity<HashMap<String, TextCount>>{
-        return ResponseEntity<HashMap<String, TextCount>>(mainService.getTf(stringInput.list), HttpStatus.OK)
+    @PostMapping("/tf")
+    fun getTf(@RequestBody stringInput: StringInput): ResponseEntity<HashMap<String, Array<Int>>>{
+        return ResponseEntity<HashMap<String, Array<Int>>>(mainService.getTf(stringInput.list), HttpStatus.OK)
+    }
+
+    @PostMapping("/idf")
+    fun getIdf(@RequestBody stringInput: StringInput): ResponseEntity<HashMap<String, Double>>{
+        return ResponseEntity<HashMap<String, Double>>(mainService.getIdf(stringInput.list), HttpStatus.OK)
+    }
+
+    @PostMapping("/tf-idf")
+    fun getTfIdf(@RequestBody stringInput: StringInput): ResponseEntity<HashMap<String, Array<Double>>>{
+        return ResponseEntity<HashMap<String, Array<Double>>>(mainService.getTfIdf(stringInput.list), HttpStatus.OK)
     }
 }
