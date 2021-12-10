@@ -1,6 +1,5 @@
 package com.example.textrecommendation.service
 
-import com.example.textrecommendation.wrapper.TextCount
 import org.springframework.stereotype.Service
 import java.util.*
 import kotlin.collections.HashMap
