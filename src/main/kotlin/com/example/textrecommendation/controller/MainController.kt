@@ -1,9 +1,7 @@
 package com.example.textrecommendation.controller
 
 import com.example.textrecommendation.dto.StringInput
-import com.example.textrecommendation.main
 import com.example.textrecommendation.service.MainService
-import com.example.textrecommendation.wrapper.TextCount
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
