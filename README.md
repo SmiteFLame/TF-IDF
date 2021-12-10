@@ -8,9 +8,9 @@ TF-IDF: 단어의 빈도와 역 문서 빈도를 사용하여 DTM 내의 각 단
 
 | 기능   | Method | URL                              | RequestBody                       |
 | ------ | ------ | -------------------------------- | --------------------------------- |
-| TF     | POST   | http://localhost:8080/api/tf     | { "list" : [문자열, 문자열.....]} |
-| IDF    | POST   | http://localhost:8080/api/idf    | { "list" : [문자열, 문자열.....]} |
-| TF-IDF | POST   | http://localhost:8080/api/tf-idf | { "list" : [문자열, 문자열.....]} |
+| TF     | GET    | http://localhost:8080/api/tf     | { "list" : [문자열, 문자열.....]} |
+| IDF    | GET    | http://localhost:8080/api/idf    | { "list" : [문자열, 문자열.....]} |
+| TF-IDF | GET    | http://localhost:8080/api/tf-idf | { "list" : [문자열, 문자열.....]} |
 
 ## TEST CASE
 
