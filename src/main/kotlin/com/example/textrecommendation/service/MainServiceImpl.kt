@@ -47,7 +47,7 @@ class MainServiceImpl : MainService {
         val map = HashMap<String, Array<Double>>()
         tf.forEach { (key, value) ->
             val array = Array(list.size) { 0.0 }
-            for(i in list.indices){
+            for (i in list.indices) {
                 array[i] = value[i] * idf[key]!!
             }
             map[key] = array
